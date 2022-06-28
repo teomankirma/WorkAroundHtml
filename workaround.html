@@ -4,13 +4,23 @@
     </head>
 
     <body>
-        <p id="para" onclick="demo()">
+        <p>
             This is a paragraph.
         </p>
+        <p>
+            This is a paragraph.
+        </p>
+        <p>
+            This is a paragraph.
+        </p>
+
+        <button onclick="demo()">
+            Click here
+        </button>
     </body>
     <script>
         function demo() {
-            var ele = document.getElementById("para").innerHTML;
+            var ele = document.getElementsByTagName("p");
             console.log(ele)
         }
     </script>
