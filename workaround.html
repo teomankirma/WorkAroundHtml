@@ -4,24 +4,18 @@
     </head>
 
     <body>
-        <p class="para">
-            This is a paragraph.
-        </p>
-        <p class="para">
-            This is a paragraph.
-        </p>
-        <p class="para">
-            This is a paragraph.
-        </p>
-
         <button onclick="demo()">
             Click here
         </button>
+
+        <p id="para">
+            This text will be replaced.
+        </p>
     </body>
     <script>
         function demo() {
-            var ele = document.getElementsByClassName("para");
-            console.log(ele)
+            var ele = document.getElementById("para");
+            ele.innerHTML = "New text";
         }
     </script>
     
