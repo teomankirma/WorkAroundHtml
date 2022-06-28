@@ -12,12 +12,12 @@
     </body>
     <script>
         function demo() {
-            var paragraph = document.createElement("p");
-            var text = document.createTextNode("This is a paragraph");
-            paragraph.appendChild(text);
+            var button = document.createElement("button");
+
+            button.innerHTML = "New button";
 
             var div = document.getElementById("main");
-            div.appendChild(paragraph);
+            div.appendChild(button);
         }
     </script>
     
