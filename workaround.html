@@ -8,14 +8,15 @@
             Click here
         </button>
 
-        <p id="para">
-            This text will be replaced.
-        </p>
+        <p> This is a paragraph </p>
+        <p> This is a paragraph </p>
+        <p> This is a paragraph </p>
+
     </body>
     <script>
         function demo() {
-            var ele = document.getElementById("para");
-            ele.innerHTML = "New text";
+            var ele = document.getElementsByTagName("p");
+            ele[0].innerHTML = "Text replaced!";
         }
     </script>
     
