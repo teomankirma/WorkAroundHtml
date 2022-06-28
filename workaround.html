@@ -6,18 +6,22 @@
     <body>
        <div id="main">
             <button onclick="demo()">Click here!</button>
+            <p id="para"> This is a paragraph.</p>
 
        </div>
 
     </body>
     <script>
         function demo() {
-            var button = document.createElement("button");
+            var heading = document.createElement("h1");
+            var text = document.createTextNode("Heading");
 
-            button.innerHTML = "New button";
+            heading.appendChild(text);
 
             var div = document.getElementById("main");
-            div.appendChild(button);
+            var paragraph = document.getElementById("para");
+
+            div.insertBefore(heading, paragraph);
         }
     </script>
     
