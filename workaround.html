@@ -4,19 +4,19 @@
     </head>
 
     <body>
-        <button onclick="demo()">
-            Click here
-        </button>
-
-        <p> This is a paragraph </p>
-        <p> This is a paragraph </p>
-        <p> This is a paragraph </p>
+       <img
+       src="./images/forest.jpeg"
+       width="200"
+       height="200"
+       onclick="demo()"
+       id="image"
+       >
 
     </body>
     <script>
         function demo() {
-            var ele = document.getElementsByTagName("p");
-            ele[0].innerHTML = "Text replaced!";
+            var ele = document.getElementById("image");
+            ele.src = "./images/mountain.jpeg";
         }
     </script>
     
