@@ -4,13 +4,14 @@
     </head>
 
     <body>
-        <button onclick="message()"> 
-            Click here
-        </button>
+        <p id="para" onclick="demo()">
+            This is a paragraph.
+        </p>
     </body>
     <script>
-        function message() {
-            alert('You clicked on the button')
+        function demo() {
+            var ele = document.getElementById("para");
+            console.log(ele)
         }
     </script>
     
