@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            .css{
-                font-size: 50px;
-                color: blue;
-            }
-        </style>
     </head>
 
     <body>
@@ -21,10 +15,7 @@
         function demo() {
             var paragraph = document.getElementById("para");
 
-            var attribute = document.createAttribute("class");
-            attribute.value = "css";
-
-            paragraph.setAttributeNode(attribute);
+            paragraph.remove();
         }
     </script>
     
